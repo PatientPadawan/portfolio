@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fanwood Text', serif;
     font-size: 20px;
     color: #444;
     text-align: center;
@@ -12,6 +12,7 @@ body {
 
 nav,
 footer {
+  font-family: 'Quattrocento', serif;
   padding: 1% 0;
   background-color: black;
   color: white;
@@ -34,17 +35,27 @@ header {
     padding: 12% 0;
 }
 
+h2 {
+  font-size: 20px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-style: none;
+}
+
+p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 section {
     min-height: 100px;
     padding: 15% 0;
-    background-color: #aaa;
     display: flex;
     justify-content: center;
 }
 
-section:nth-child(even) {
-  background-color: #bbb;
-}
 
 .projectContainer {
   width: 80%;
@@ -64,6 +75,10 @@ section:nth-child(even) {
   height: 30%;
 }
 
+.projectDescription {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   section {
     padding: 10% 0;
@@ -71,6 +86,10 @@ section:nth-child(even) {
 
   .projectContainer {
     min-height: 500px;
+  }
+
+  .projectDescription {
+    display: block;
   }
 }
 
