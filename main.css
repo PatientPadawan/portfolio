@@ -223,7 +223,7 @@ nav span {
  }
 
  div.projectsFlexContainer {
-   display: flex;
+   display: none;
    align-items: flex-start;
    flex-flow: row wrap;
    height: 100%;
