@@ -51,7 +51,7 @@ header {
   border-radius: 0.2em;
   border: solid 1px black;
   height: 40%;
-  width: auto;
+  width: 80%;
   margin: 7% 0 0;
 }
 
@@ -171,6 +171,7 @@ nav span:hover {
 
 .contact {
   display: none;
+  margin: 20% 0 0;
 }
 
 .contactLogoContainer {
@@ -183,7 +184,8 @@ nav span:hover {
 @media screen and (min-width: 768px) {
  #headshot {
    margin: 0;
-   height: 55%
+   height: 55%;
+   width: auto;
  }
  
   h2 {
@@ -261,4 +263,10 @@ nav span:hover {
   margin: 0;
   line-height: 0;
 }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact {
+    margin: 0;
+  }
 }
