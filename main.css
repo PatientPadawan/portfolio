@@ -176,6 +176,7 @@ nav span:hover {
 .contactLogoContainer {
   display: flex;
   justify-content: space-around;
+  margin: 25% 0 0;
   padding: 4% 0 0;
 }
 
