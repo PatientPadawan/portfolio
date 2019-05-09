@@ -148,6 +148,8 @@ a:hover {
 
  p {
    font-size: 20px;
+   font-weight: 200;
+   line-height: 24px;
  }
  
   section {
@@ -163,19 +165,46 @@ a:hover {
     margin: 0;
     padding: 5% 5%;
   }
-
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
- section {
+ section.project {
    padding: 7% 0;
+   width: 40%;
+   min-height: 300px;
+   margin: 0 auto;
  }
 
- .projectContainer{
-    min-height: 650px;
+ p {
+   font-size: 22px;
+   line-height: 28px;
  }
+
+ .projectsFlexContainer {
+   display: flex;
+   align-items: flex-start;
+   flex-flow: row wrap;
+   height: 100%;
+ }
+
+ .projectContainer {
+  width: 100%;
+  height: 625px;
+  border: black solid 1px;
+  border-radius: 0.2em;
 }
+
+.photoContainer {
+  width: 100%;
+  height: 60%;
+  border-bottom: black solid 1px;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+}
+
+/*
+@media screen and (min-width: 1440px) {
+
+} */
