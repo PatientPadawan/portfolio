@@ -4,16 +4,22 @@
 function renderProjects() {
     $('div.projectsFlexContainer').css('display', 'flex');
     $('.project').css('display', 'flex');
+
     console.log('renderProjects ran');
 }
 
 // render contact
+function renderContact() {
+    $('.contact').css('display', 'block');
+
+    console.log('renderContact ran');
+}
 
 // render about me
 function renderAboutMe() {
- $('header').css('display', 'block');
+    $('header').css('display', 'block');
 
- console.log('renderAboutMe ran');
+    console.log('renderAboutMe ran');
 }
 
 // hide projects
@@ -24,6 +30,11 @@ function hideProjects() {
 }
 
 // hide contact
+function hideContact() {
+    $('.contact').css('display', 'none');
+
+    console.log('hideContact ran');
+}
 
 // hide about me
 function hideAboutMe() {
@@ -37,6 +48,9 @@ function handleLogoClick() {
     $('nav').on('click', '.js-logoClick', function (e) {
         renderAboutMe();
         hideProjects();
+        hideContact();
+
+        console.log('handleLogoClick ran');
     });
 }
 
@@ -45,15 +59,28 @@ function handleProjectsClick() {
     $('nav').on('click', '.js-projectsClick', function (e) {
         renderProjects();
         hideAboutMe();
+        hideContact();
+
+        console.log('handleProjectsClick ran');
     });
 }
 
 // contact click handler
+function handleContactClick() {
+    $('nav').on('click', '.js-contactClick', function (e) {
+        renderContact();
+        hideAboutMe();
+        hideProjects();
+
+        console.log('handleContactClick ran');
+    });
+}
 
 // function handler
 function portfolioLanding() {
     handleProjectsClick();
     handleLogoClick();
+    handleContactClick();
 }
 
 // event listener for page load

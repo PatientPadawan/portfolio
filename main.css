@@ -111,14 +111,13 @@ div.aboutMeContainer {
 
 .projectContainer {
   width: 80%;
-  min-height: 300px;
+  min-height: 275px;
   border: black solid 1px;
   border-radius: 0.2em;
 }
 
 .photoContainer {
   width: 100%;
-  height: 70%;
   border-bottom: black solid 1px;
   padding: 0;
   margin: 0;
@@ -164,6 +163,20 @@ a:hover {
 
 nav span {
   cursor: pointer;
+}
+
+nav span:hover {
+  color: #7fffd4;
+}
+
+.contact {
+  display: none;
+}
+
+.contactLogoContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 4% 0 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -222,6 +235,10 @@ nav span {
    line-height: 28px;
  }
 
+ .logoContainer {
+   padding: 4% 0 0;
+ }
+
  div.projectsFlexContainer {
    display: none;
    align-items: flex-start;
@@ -231,22 +248,16 @@ nav span {
 
  .projectContainer {
   width: 100%;
-  height: 625px;
+  min-height: 650px;
   border: black solid 1px;
   border-radius: 0.2em;
 }
 
 .photoContainer {
   width: 100%;
-  height: 60%;
   border-bottom: black solid 1px;
   padding: 0;
   margin: 0;
   line-height: 0;
 }
 }
-
-/*
-@media screen and (min-width: 1440px) {
-
-} */
